@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.feedback-header {
+  text-align: center;
+  padding: 60px 20px;
+  background: #164e63;
+  color: white;
+}
+
+.feedback-header span {
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: #a5f3fc;
+}
+
+.feedback-header h1 {
+  margin: 15px 0 10px;
+  font-size: 42px;
+}
+
+.feedback-header p {
+  margin: 0;
+  color: #cffafe;
+}
+
+.content {
+  max-width: 650px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+.form-card {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-card label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #334155;
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  outline: none;
+}
+
+.form-card input:focus,
+.form-card select:focus,
+.form-card textarea:focus {
+  border-color: #0891b2;
+}
+
+.form-card textarea {
+  resize: vertical;
+}
+
+.form-card button {
+  border: none;
+  padding: 14px;
+  border-radius: 9px;
+  background: #0891b2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-card button:hover {
+  background: #0e7490;
+}
+
+.success-box {
+  margin-top: 25px;
+  padding: 18px;
+  border-radius: 10px;
+  background: #ecfeff;
+  border: 1px solid #a5f3fc;
+}
+
+.success-box h3 {
+  margin: 0 0 8px;
+  color: #155e75;
+}
+
+.success-box p {
+  margin: 0;
+  color: #475569;
+}
+
+@media (max-width: 600px) {
+  .feedback-header h1 {
+    font-size: 32px;
+  }
+
+  .form-card {
+    padding: 25px 20px;
+  }
+}

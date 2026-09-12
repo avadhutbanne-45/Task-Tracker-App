@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fefce8;
+}
+
+header {
+  background: #713f12;
+  color: white;
+  padding: 55px 8%;
+}
+
+header span {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #fde68a;
+}
+
+header h1 {
+  font-size: 42px;
+  margin: 15px 0 10px;
+}
+
+header p {
+  color: #fef3c7;
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 45px 25px;
+}
+
+.view-button {
+  border: none;
+  background: #ca8a04;
+  color: white;
+  padding: 13px 22px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.workshops {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.workshop {
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.number {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fef3c7;
+  color: #92400e;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.workshop h2 {
+  color: #422006;
+}
+
+.workshop p {
+  color: #78716c;
+}
+
+.workshop strong {
+  color: #ca8a04;
+}
+
+.hidden-box {
+  background: white;
+  padding: 50px;
+  text-align: center;
+  border-radius: 18px;
+}
+
+.hidden-box h2 {
+  color: #422006;
+}
+
+.hidden-box p {
+  color: #78716c;
+}
+
+@media (max-width: 700px) {
+  .workshops {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+}

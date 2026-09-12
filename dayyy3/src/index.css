@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.progress-header {
+  padding: 60px 20px;
+  text-align: center;
+  background: #312e81;
+  color: white;
+}
+
+.progress-header span {
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: #c7d2fe;
+}
+
+.progress-header h1 {
+  margin: 15px 0 10px;
+  font-size: 42px;
+}
+
+.progress-header p {
+  margin: 0;
+  color: #e0e7ff;
+  font-size: 16px;
+}
+
+.progress-container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  display: grid;
+  gap: 25px;
+}
+
+.progress-card {
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+.card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-heading h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.card-heading span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4f46e5;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: #e2e8f0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #4f46e5;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-group button {
+  width: 42px;
+  height: 38px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background: #3730a3;
+}
+
+@media (max-width: 600px) {
+  .progress-header h1 {
+    font-size: 32px;
+  }
+
+  .progress-card {
+    padding: 22px;
+  }
+}
